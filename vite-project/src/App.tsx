@@ -1,11 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
-import SeriesList from './features/movies/SeriesList';
-import MoviesList from './features/movies/MoviesList';
+import SeriesList from './features/streaming/SeriesList'
+import MoviesList from './features/streaming/MoviesList'
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App

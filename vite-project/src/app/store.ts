@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import movieSlice from '../features/movies/movieSlice';
+import { configureStore } from '@reduxjs/toolkit'
+import streamingSlice from '../features/streaming/streamingSlice'
+import paginationSlice from '../features/pagination/paginationSlice'
 
 export default configureStore({
   reducer: {
-    movies: movieSlice,
+    streaming: streamingSlice,
+    pagination: paginationSlice,
   },
-});
+})
